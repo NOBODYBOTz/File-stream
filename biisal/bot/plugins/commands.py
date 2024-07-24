@@ -17,11 +17,12 @@ from biisal.vars import bot_name , bisal_channel , bisal_grp
 from nobody import get_wish
 
 
-SRT_TXT = """<b>ᴊᴀɪ sʜʀᴇᴇ ᴋʀsɴᴀ {}!,
-I ᴀᴍ Fɪʟᴇ ᴛᴏ Lɪɴᴋ Gᴇɴᴇʀᴀᴛᴏʀ Bᴏᴛ ᴡɪᴛʜ Cʜᴀɴɴᴇʟ sᴜᴘᴘᴏʀᴛ.
+SRT_TXT = """<b>
+ʜᴇʟʟᴏ  {}
+{}
+ɪ ᴀᴍ ғɪʟᴇ ᴛᴏ ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ ᴡɪᴛʜ ᴄʜᴀɴɴᴇʟ sᴜᴘᴘᴏʀᴛ sᴇɴᴅ ᴍᴇ ᴀɴʏ ғɪʟᴇ .!
 
-Sᴇɴᴅ ᴍᴇ ᴀɴʏ ғɪʟᴇ ᴀɴᴅ ɢᴇᴛ ᴀ ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ ᴀɴᴅ sᴛʀᴇᴀᴍᴀʙʟᴇ ʟɪɴᴋ.!
-ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://t.me/biisal_bot'>Bɪɪsᴀʟ</a></b>"""
+ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://t.me/Mangerofakott_bot'>🍁Jᴀʀᴠɪs</a></b>"""
 
 @StreamBot.on_message(filters.command("start") & filters.private )
 async def start(b, m):
@@ -66,7 +67,7 @@ async def start(b, m):
     await StreamBot.send_photo(
     chat_id=m.chat.id,
     photo="https://telegra.ph/file/d813fe75a3ac675ef34b7.jpg",
-    caption= SRT_TXT.format(m.from_user.mention(style="md")),
+    caption= SRT_TXT.format(m.from_user.mention(style="md"), get_wish()),
     reply_markup=InlineKeyboardMarkup(
         [
             [InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🤡", url=bisal_channel)],
@@ -205,7 +206,7 @@ async def cb_handler(client, query):
 
     if data == "start":
         await query.message.edit_caption(
-        caption= SRT_TXT.format(query.from_user.mention(style="md")),
+        caption= SRT_TXT.format(query.from_user.mention(style="md"), get_wish()),
         reply_markup=InlineKeyboardMarkup(
                 [
             [InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🤡", url=bisal_channel)],
