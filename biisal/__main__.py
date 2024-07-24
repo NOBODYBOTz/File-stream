@@ -86,8 +86,8 @@ async def start_services():
     print('---------------------------------------------------------------------------------------------------------')
     print(LOGO)
     try: 
-        await StreamBot.send_message(chat_id=Var.RESTAT ,text='<b>𝙹𝙰𝚁𝚅𝙸𝚂 :- 𝚑𝚎𝚕𝚕𝚘 𝚜𝚒𝚛 𝚘𝚞𝚛 𝚏𝚒𝚕𝚎 𝚜𝚝𝚛𝚎𝚊𝚖𝚒𝚗𝚐 𝚋𝚘𝚝 𝚒𝚜 𝚘𝚗𝚕𝚒𝚗𝚎 𝚕𝚒𝚗𝚔 » <a href='https://t.me/FILE_TO_LINK_01_BOT'>𝚂𝚃𝚁𝙴𝙰𝙼 𝙱𝙾𝚃</a></b>')
-        await StreamBot.send_message(chat_id=Var.OWNER_ID[0] ,text='<b>𝙹𝙰𝚁𝚅𝙸𝚂 :- 𝚑𝚎𝚕𝚕𝚘 𝚜𝚒𝚛 𝚘𝚞𝚛 𝚏𝚒𝚕𝚎 𝚜𝚝𝚛𝚎𝚊𝚖𝚒𝚗𝚐 𝚋𝚘𝚝 𝚒𝚜 𝚘𝚗𝚕𝚒𝚗𝚎 𝚕𝚒𝚗𝚔 » <a href='https://t.me/FILE_TO_LINK_01_BOT'>𝚂𝚃𝚁𝙴𝙰𝙼 𝙱𝙾𝚃</a></b>')
+        await StreamBot.send_message(chat_id=Var.RESTAT ,text="<b>𝙹𝙰𝚁𝚅𝙸𝚂 :- 𝚑𝚎𝚕𝚕𝚘 𝚜𝚒𝚛 𝚘𝚞𝚛 𝚏𝚒𝚕𝚎 𝚜𝚝𝚛𝚎𝚊𝚖𝚒𝚗𝚐 𝚋𝚘𝚝 𝚒𝚜 𝚘𝚗𝚕𝚒𝚗𝚎 𝚕𝚒𝚗𝚔 » <a href='https://t.me/FILE_TO_LINK_01_BOT'>𝚂𝚃𝚁𝙴𝙰𝙼 𝙱𝙾𝚃</a></b>")
+        await StreamBot.send_message(chat_id=Var.OWNER_ID[0] ,text="<b>𝙹𝙰𝚁𝚅𝙸𝚂 :- 𝚑𝚎𝚕𝚕𝚘 𝚜𝚒𝚛 𝚘𝚞𝚛 𝚏𝚒𝚕𝚎 𝚜𝚝𝚛𝚎𝚊𝚖𝚒𝚗𝚐 𝚋𝚘𝚝 𝚒𝚜 𝚘𝚗𝚕𝚒𝚗𝚎 𝚕𝚒𝚗𝚔 » <a href='https://t.me/FILE_TO_LINK_01_BOT'>𝚂𝚃𝚁𝙴𝙰𝙼 𝙱𝙾𝚃</a></b>")
     except Exception as e:
         print(f'got this err to send restart msg to owner : {e}')
     await idle()
