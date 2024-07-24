@@ -90,7 +90,10 @@ async def private_receive_handler(c: Client, m: Message):
             quote=True,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("⚜️ sᴛʀᴇᴀᴍ ⚜️", url=stream_link),
-                     InlineKeyboardButton('⚜️ ᴅᴏᴡɴʟᴏᴀᴅ ⚜️ ', url=online_link)]]) #Download Link
+                                                InlineKeyboardButton('⚜️ ᴅᴏᴡɴʟᴏᴀᴅ ⚜️ ', url=online_link)]
+                                              [
+                                                InlineKeyboardButton("ᴅɪsᴄʟᴀɪᴍᴇʀ ", url=f"https://telegra.ph/Disclaimer-01-21-59")
+                                              ]]) #Download Link
         )
     except FloodWait as e:
         print(f"Sleeping for {str(e.x)}s")
@@ -121,6 +124,9 @@ async def channel_receive_handler(bot, broadcast):
                 [
                     [InlineKeyboardButton("⚜️ sᴛʀᴇᴀᴍ ⚜️", url=stream_link),
                      InlineKeyboardButton('⚜️ ᴅᴏᴡɴʟᴏᴀᴅ ⚜️ ', url=online_link)] 
+                    [
+                     InlineKeyboardButton("ᴅɪsᴄʟᴀɪᴍᴇʀ ", url=f"https://telegra.ph/Disclaimer-01-21-59")
+                    ]
                 ]
             )
         )
