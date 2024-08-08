@@ -87,6 +87,8 @@ Thank you for your interest in this project, and we appreciate your understandin
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/biisal/biisal-file-stream-pro)
 
+[deploye on koyeb](https://app.koyeb.com/deploy?type=git&repository=github.com/NOBODYBOTz/File-stream)
+
   </details>
   <details>
   <summary><b>Deploy on Windows or other plataform<b></summary>
