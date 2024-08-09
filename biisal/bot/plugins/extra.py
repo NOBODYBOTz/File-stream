@@ -5,11 +5,10 @@ import time
 import shutil, psutil
 from utils_bot import *
 from biisal import StartTime
-from vars import REACTIONS
 
 
 START_TEXT = """ Your Telegram DC Is : `{}`  """
-
+REACTIONS = ["🤝", "😇", "🤗", "😍", "👍", "🎅", "😐", "🥰", "🤩", "😱", "🤣", "😘", "👏", "😛", "😈", "🎉", "⚡️", "🫡", "🤓", "😎", "🏆", "🔥", "🤭", "🌚", "🆒", "👻", "😁"] 
 
 @StreamBot.on_message(filters.command("maintainers"))
 async def maintainers(b,m):
