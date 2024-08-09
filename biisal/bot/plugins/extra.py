@@ -5,7 +5,7 @@ import time
 import shutil, psutil
 from utils_bot import *
 from biisal import StartTime
-from .vars import Var
+from vars import REACTIONS
 
 
 START_TEXT = """ Your Telegram DC Is : `{}`  """
