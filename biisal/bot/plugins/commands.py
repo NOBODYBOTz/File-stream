@@ -26,6 +26,7 @@ SRT_TXT = """<b>
 
 @StreamBot.on_message(filters.command("start") & filters.private )
 async def start(b, m):
+    await m.react(emoji="🔥")
     if not await db.is_user_exist(m.from_user.id):
         await db.add_user(m.from_user.id)
         await b.send_message(
