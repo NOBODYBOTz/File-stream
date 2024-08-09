@@ -14,9 +14,7 @@ START_TEXT = """ Your Telegram DC Is : `{}`  """
 @StreamBot.on_message(filters.command("maintainers"))
 async def maintainers(b,m):
     try:
-       await message.react(emoji=random.choice(REACTIONS), big=True)
-   except:
-       await message.react(emoji="⚡️", big=True)
+       await m.react(emoji=random.choice(REACTIONS), big=True)
        await b.send_message(chat_id=m.chat.id,text="HELLO",quote=True)
     except Exception:
                 await b.send_message(
